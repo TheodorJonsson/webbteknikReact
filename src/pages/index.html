@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv-se">
+    <head>
+        <link rel="stylesheet" href="tegspizzeria.css">
+        <script src="onMouseover.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+        </style>
+        <meta name="author" content="Theodor Jonsson">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <title>Tegs Pizzeria och Grill</title>
+    </head>
+
+    <body id="mainframe">
+        <header id="headerItems">
+            <a href="index.html"><h1 onmouseover="changeToBlueColor(event)" onmouseout="changeToBackColor(event)">Hem</h1></a>
+            <a href="menu.html"><h1 onmouseover="changeToBlueColor(event)" onmouseout="changeToBackColor(event)" >Meny</h1></a>
+            <a href="contact.html"><h1 onmouseover="changeToBlueColor(event)" onmouseout="changeToBackColor(event)" >Kontakt</h1></a>
+            <a href="gallery.html"><h1 onmouseover="changeToBlueColor(event)" onmouseout="changeToBackColor(event)" >Galleri</h1></a>
+            <a href="review.html"><h1 onmouseover="changeToBlueColor(event)" onmouseout="changeToBackColor(event)">Recensioner</h1></a>
+        </header>
+        <h4 id="animated-heading">Tegs Pizzeria</h4>
+        <button id="make-transparent-btn" class="button">Show background</button>
+        <div class="gridcontainer">
+            <div class="griditem">
+                <img src="pizza.png" alt="Pizza">
+                <table>
+                    <tr>
+                        <td>Lunch</td>
+                        <td>100kr</td>
+                    </tr>
+                    <tr>
+                        <td>Mån - Fre</td>
+                        <td>Kl. 11.00-14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Välj valfri rätt från hela menyn</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Ingår:</td>
+                        <td>Dricka, Kaffe, Bröd & Smör</td>
+                    </tr>
+                    <tr>
+                        <td>Extra stor pizza kortar</td>
+                        <td>70 kr extra</td>
+                    </tr>
+                    <tr>
+                        <td>Glutenfri pizzabotten kostar</td>
+                        <td>30 kr extra</td>
+                    </tr>
+                    <tr>
+                        <td>Barnpizzor</td>
+                        <td>10 kr billigare än originalpri</td>
+                    </tr>
+                </table>
+                
+            </div>
+            <div class="griditem">
+                <img src="burger.png" alt="Burger">
+                <table>
+                    <tr>
+                        <td>Dagens erbjudande 2 för</td>
+                        <td>180kr</td>
+                    </tr>
+                    <tr>
+                        <td>Mån - Fre</td>
+                        <td>Kl. 14.00-20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Välj valfritt 2 pizzor bland nummer 1-8</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <h2> OBS! allergisk eller överkänsligt, kontakta gärna restaurangpersonalen</h2>
+            </div>
+        </div>
+            
+        <footer>
+            <ul class="contact">
+                <li>Bryggargatan 46, Umeå</li>
+                <li>090 - 13  20 15<li>
+            </ul>
+            <ul class="hours">
+                <li>Mån-Fre 11.00 - 20.00</li>
+                <li>Lör-Sön 12.00 - 20.00</li>
+            </ul>
+        </footer>
+        
+        <div id="random_button_container"></div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+        <script src="anim.js"></script> <!-- Include your script file -->
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+        <script src="randomizer.js"></script>
+        
+    </body>
+</html>

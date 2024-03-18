@@ -1,0 +1,301 @@
+:root{
+    --peaslake: #88AB8E;
+    --greenbark: #AFC8AD;
+    --sugarsoap: #EEE7DA;
+    --trafficwhite: #F2F1EB
+}
+
+HTML, body {
+    
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
+}
+/* Main frame used for the entire site */
+#mainframe {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    min-width: 100vw;
+    width:calc(var(--vw, 1vw) * 100);
+    background-color: var(--sugarsoap);
+    background-size:cover;
+
+    margin-left: auto;
+    margin-right: auto; 
+    position:relative;
+}
+
+#random_button_container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Used for the main content of the page outside 
+    of the header and footer */
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--greenbark);
+    background-size: auto;
+
+    min-width:50vw;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    
+}
+
+/* The menu items of the header so they align correctly and move */
+#headerItems {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header{
+    background-color: var(--peaslake);
+    margin-bottom: 5%;
+    opacity: 0.9;
+}
+
+h1{
+    color: #F1F1F1;
+    background-color: var(--greenbark);
+    font-family: Roboto Slab, serif;
+    font-size: 2vw;
+    padding: 0.5em;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: 2%;
+    margin-right: 2%;
+    transition: background-color 0.1s ease;
+}
+
+a{
+    text-decoration: none;
+    font-family: Roboto Slab, serif;
+    font-size: 2vw;
+    padding: 0.5em;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: 2%;
+    margin-right: 2%;
+    user-select: none;
+    transition: background-color 0.1s ease;
+}
+h2 {
+    color: rgb(12, 0, 0);
+    font-size: 1.5vw;
+    font-family: Roboto Slab, serif;
+}
+
+
+h3 {
+    display: grid;
+    color: #F1F1F1;
+    font-size: 2vw;
+    font-family: Roboto Slab, serif;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+h3 a {
+    color: #F1F1F1;
+    font-size: 1vw;
+    font-family: Roboto Slab, serif;
+    text-align: center;
+    margin-top: 0px;
+}
+
+h4 {
+    color: rgb(238, 255, 0);
+    font-size: 5vw;
+    font-family: Roboto Slab, serif;
+    background-color: var(--greenbark);
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.breathing-text {
+  color: rgb(238, 255, 0);
+  font-size: 5vw;
+  font-family: Roboto Slab, serif;
+  background-color: var(--greenbark);
+  border-radius: 10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+footer {
+    background-color: var(--peaslake);
+    color: #F1F1F1;
+    bottom: 0;
+    height: 10vh;
+    height: calc(var(--vh, 1vh) * 7.5);
+    width: 100vw;
+    width: calc(var(--vh, 1vw) * 100);
+    position:relative;
+    clear: both;
+    margin-top: auto;
+}
+ul{
+    list-style-type: none;
+}
+
+.hours {
+    float: right;
+    margin-right: 5vw;
+}
+
+.contact {
+    float: left;
+    margin-left: 5vw;
+}
+
+
+/* Used for a grid instead of normal container */
+.gridcontainer{
+    display:grid;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-color:transparent;
+    grid-template-columns: auto auto;
+    grid-row-gap: 1vh;
+    grid-column-gap: 1vh;
+
+}
+
+.griditem{
+    background-color: var(--greenbark);
+    border-radius:5px;
+    margin: 0.5vh;
+    font-size: 1vw;
+    box-shadow: 5px 5px;
+    padding: 2vh;
+}
+/* table for the menu*/
+table {
+    width: 100%;
+    overflow: auto;
+    border-top-width: 0;
+    border-left-width: 0;
+}
+/* style for the table items */
+td{
+    color: rgb(12, 0, 0);
+    font-size: 1.5vw;
+    font-family: Roboto Slab, serif;
+    text-align: left;
+}
+
+/* Used for the email form in the contact section */
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    border-radius: 10px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: var(--sugarsoap);
+}
+
+form button{
+    padding: 15px;
+    background-color: var(--sugarsoap);
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    margin: 1% 1% 1% 1%;
+    display: flex;
+}
+/* Used for the video in gallery*/
+.myiframe {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.myiframe iframe{
+    left: 10%;
+    right: 10%;
+    height: 80vh;
+    height: calc(var(--vh, 1vh) * 80);
+    width: 80vw;
+    width: calc(var(--vw, 1vw) * 80);
+    align-self: center;
+    text-align: center;
+}
+/* For the little JS used, for the stars in the review section */
+.checked{
+    color: orange;
+}
+/* When printing out the menu removes the unecessary parts aswell 
+    as changing the background to white to not use more paint .
+    changes the texts to all black to make it more readable. */
+@media print{
+    body{
+        margin: 0;
+        color:#000000;
+        background-color: #FFF;
+    }
+    header, footer, h1, img{
+        display:none;
+    }
+    h4{
+        color: #000000;
+    }
+}
+.hover {
+    position: relative;
+    top: -5px;
+}
+
+.button{
+    align-self: center;
+    text-align: center;
+    width: fit-content;
+}
+
+#animated-heading {
+    transition: all 0.5s ease;
+  }
+  
+  #animated-heading.moved {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 10vw;
+  }
