@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/webbteknikReact/static/css/main.e704d90c.css",
+    "main.js": "/webbteknikReact/static/js/main.ad216860.js",
+    "static/js/453.6d0e4ec0.chunk.js": "/webbteknikReact/static/js/453.6d0e4ec0.chunk.js",
+    "static/media/logo.svg": "/webbteknikReact/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/webbteknikReact/index.html",
+    "main.e704d90c.css.map": "/webbteknikReact/static/css/main.e704d90c.css.map",
+    "main.ad216860.js.map": "/webbteknikReact/static/js/main.ad216860.js.map",
+    "453.6d0e4ec0.chunk.js.map": "/webbteknikReact/static/js/453.6d0e4ec0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e704d90c.css",
+    "static/js/main.ad216860.js"
+  ]
+}
